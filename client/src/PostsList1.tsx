@@ -10,6 +10,10 @@ function PostsList1() {
     queryFn: getPosts,
   });
 
+  // 22:06
+  // postsQuery.fetchStatus === 'fetching';
+  // postsQuery.status === 'loading';
+
   if (postsQuery.isLoading) return <h1>Loading...</h1>;
   if (postsQuery.isError) {
     return <pre>{JSON.stringify(postsQuery.error)}</pre>;
