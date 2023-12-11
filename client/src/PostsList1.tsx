@@ -8,6 +8,9 @@ function PostsList1() {
   const postsQuery = useQuery({
     queryKey: ['posts'],
     queryFn: getPosts,
+
+    // staleTime: 1000,
+    // refetchInterval: 1000,
   });
 
   // 22:06
